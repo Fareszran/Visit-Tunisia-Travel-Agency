@@ -78,14 +78,22 @@ par.addEventListener("mouseout", function() {
     par.innerHTML = "Tunisia is situated on the Mediterranean coast of Northwest Africa, midway between the Atlantic Ocean and the Nile Delta. It is bordered by Algeria on the west (965 km) and southwest and Libya on the south east (459 km)."
 })
 
+$(document).ready(function() {
+  $("#loginButton").on("click", function() {
+    login();
+  });
+});
+
 function login() {
   var username = $("#fullname").val()
   var password = $("#password").val()
 
   if (username === '' || password === '') {
-      alert('You must fill in your information.')
+    alert('You must fill in your information.')
   } else {
-     
-      window.location.href = 'https://www.yourotherwebsite.com'
+    console.log('Login function called.')
+    window.location.href = 'http://127.0.0.1:5500/index.html'
   }
 }
+
+
