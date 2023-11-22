@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="contactUs.css">
+    <title>Contact Us</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("8OXmTdhTFKKhNB6mz");
+        })();
+    </script>
+</head>
+<body>
+    <section>
+        <h1>Contact Us</h1>
+        <p>If you have any ideas how to help us</p>
+        <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input id="Fullname" type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input  id ="email_id"type="email" placeholder="Email" />
+            </div>
+            
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input id="message" type="message" placeholder="message" />
+            </div>
+            <button onclick="sendMail()" class="btn" value="Sign up" >send me</button>
+    </section>
+
+    <div class="social-media-links">
+        <a href="#" onclick="openTwitterkLink()">
+            <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png">
+        </a>
+        <a href="#" onclick="openFacebookLink()">
+            <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png">
+        </a>
+        <a href="#" onclick="openGmailLink()">
+            <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-google.png">
+        </a>
+        <a href="#" onclick="openInstagramLink()">
+            <img class="link-img" src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png">
+        </a>
+    </div>
+
+    <script src="contactUs.js"></script>
+</body>
+</html>

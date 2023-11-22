@@ -13,7 +13,7 @@ sign_in_btn.addEventListener("click", () => {
 
 function sendMail() {
   var params = {
-    name: document.getElementById("fullname").value, 
+    name: document.getElementById("Fullname").value, 
     email: document.getElementById("email_id").value, 
     message: document.getElementById("message").value,
   };
@@ -24,7 +24,7 @@ function sendMail() {
 
   emailjs.send(serviceID, templateID, params)
     .then(res => {
-      document.getElementById("fullname").value = ""
+      document.getElementById("Fullname").value = ""
       document.getElementById("email_id").value = ""
       document.getElementById("message").value = ""
       console.log(res);
@@ -48,8 +48,6 @@ function openlinkedin(){
   window.open("https://www.linkedin.com/in/khalil-cherni-778464266/")
 }
 
-console.log($)
-
 $(document).ready(function(){
   $(".fab.fa-twitter").click(function(){
     window.location.href = 'https://twitter.com/';
@@ -62,6 +60,9 @@ $(document).ready(function(){
   })
   $(".fab fa-linkedin-in").click(function(){
     window.location.href = 'https://www.linkedin.com/in/khalil-cherni-778464266/';
+  })
+  $(".btn").click(function(){
+    window.location.href = '';
   })
 
 })
