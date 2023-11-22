@@ -12,21 +12,29 @@ sign_in_btn.addEventListener("click", () => {
 
 
 function sendMail() {
-  // alert("hello")
   var params = {
-      from_name: document.getElementById("fullname").value,
-      email_id: document.getElementById("email_id").value,
-      message:"hello hello"
-      
+    name: document.getElementById("fullname").value, 
+    email: document.getElementById("email_id").value, 
+    message: document.getElementById("message").value,
   };
 
-  emailjs.send("service_yuhixo3","template_tcrkuws",params).then(res =>{
-      alert("Success! " + res.status)}
-  );
+ 
+  const serviceID = "service_yuhixo3";
+  const templateID = "template_tcrkuws";
+
+  emailjs.send(serviceID, templateID, params)
+    .then(res => {
+      document.getElementById("fullname").value = ""
+      document.getElementById("email_id").value = ""
+      document.getElementById("message").value = ""
+      console.log(res);
+      alert("Your message sent successfully!!")
+    })
+    .catch(err => console.log(err))
 }
 
 function openTwitterkLink() {
-  window.open('https://twitter.com/');
+  window.open('https://twitter.com/')
 }
 function openFacebookLink() {
   window.open('https://www.facebook.com/khalil.cherni.338/');
@@ -38,4 +46,45 @@ function openGmailLink(){
 }
 function openlinkedin(){
   window.open("https://www.linkedin.com/in/khalil-cherni-778464266/")
+}
+
+console.log($)
+
+$(document).ready(function(){
+  $(".fab.fa-twitter").click(function(){
+    window.location.href = 'https://twitter.com/';
+  })
+  $(".fafab fa-facebook-f").click(function(){
+    window.location.href = 'https://www.facebook.com/khalil.cherni.338/';
+  })
+  $(".fab fa-google").click(function(){
+    window.location.href = 'https://mail.google.com/mail/u/0/?hl=fr#inbox';
+  })
+  $(".fab fa-linkedin-in").click(function(){
+    window.location.href = 'https://www.linkedin.com/in/khalil-cherni-778464266/';
+  })
+
+})
+var par = document.getElementById("par")
+
+
+par.addEventListener("mouseover", function() {
+    par.innerHTML = "    Tunis, the capital of Tunisia, is a city that has a lot to offer. It is a city that is rich in history, culture, and gastronomy"
+    "The Tunis Medina is a must-visit place in Tunis.";
+})
+
+par.addEventListener("mouseout", function() {
+    par.innerHTML = "Tunisia is situated on the Mediterranean coast of Northwest Africa, midway between the Atlantic Ocean and the Nile Delta. It is bordered by Algeria on the west (965 km) and southwest and Libya on the south east (459 km)."
+})
+
+function login() {
+  var username = $("#fullname").val()
+  var password = $("#password").val()
+
+  if (username === '' || password === '') {
+      alert('You must fill in your information.')
+  } else {
+     
+      window.location.href = 'https://www.yourotherwebsite.com'
+  }
 }
