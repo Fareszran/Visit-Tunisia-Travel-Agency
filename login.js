@@ -66,17 +66,7 @@ $(document).ready(()=>{
   })
 
 })
-// var par = document.getElementById("par")
 
-
-// par.addEventListener("mouseover", function() {
-//     par.innerHTML = "    Tunis, the capital of Tunisia, is a city that has a lot to offer. It is a city that is rich in history, culture, and gastronomy"
-//     "The Tunis Medina is a must-visit place in Tunis.";
-// })
-
-// par.addEventListener("mouseout", function() {
-//     par.innerHTML = "Tunisia is situated on the Mediterranean coast of Northwest Africa, midway between the Atlantic Ocean and the Nile Delta. It is bordered by Algeria on the west (965 km) and southwest and Libya on the south east (459 km)."
-// })
 
 $(document).ready(()=> {
   $("#loginButton").on("click", ()=> {
