@@ -7,12 +7,12 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    $(".btn.btn-primary").click(function(){
-        window.location.href = 'Book Now.html';
+    $(".btn.btn-primaryx").click(function(){
+        window.location.href = 'View All Packages.html';
     })
     });$(document).ready(function(){
-        $(".btn.btn-secondary").click(function(){
-            window.location.href = 'Book Now.html';
+        $(".btn.btn-secondaryx").click(function(){
+            window.location.href = 'View All Packages.html';
         })
         });$(document).ready(function(){
             $(".btn.btn-primary").click(function(){
@@ -29,4 +29,7 @@ $(document).ready(function(){
                     });$(document).ready(function(){
                         $(".btn.btn-secondaryd").click(function(){
                             window.location.href = 'Book Now.html';
-                        })})
+                        })});$(document).ready(function(){
+                            $(".btn.btn-primaryp").click(function(){
+                                window.location.href = 'https://en.wikipedia.org/wiki/Tunisia';
+                            })})
