@@ -169,6 +169,21 @@ body { background: var(--white); }
 .btn-hi:is(:hover, :focus) { background: hsla(0, 0%, 100%, 0.1); }
 
 
+.btn-pri {
+  background: var(--bright-navy-blue);
+  border-color: var(--bright-navy-blue);
+}
+
+.btn-pri:is(:hover, :focus) {
+  background: var(--yale-blue);
+  border-color: var(--yale-blue);
+}
+
+.btn-pri { border-color: var(--white); }
+
+.btn-pri:is(:hover, :focus) { background: hsla(0, 0%, 100%, 0.1); }
+
+
 .h1,
 .h2,
 .h3 {

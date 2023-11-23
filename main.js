@@ -26,4 +26,8 @@ $(document).ready(function(){
                     $(".btn.btn-hi").click(function(){
                         window.location.href = 'View All Packages.html';
                     })
-                    });
+                    });$(document).ready(function(){
+                        $(".btn.btn-pri").click(function(){
+                            window.location.href = 'More Destination.html';
+                        })
+                        });
