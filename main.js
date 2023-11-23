@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".btn.btn-primary").click(function(){
+    $(".btn.btn-pri").click(function(){
         window.location.href = 'http://127.0.0.1:5500/More%20Destination.html';
     });
     $("#k").click(function(){
@@ -26,9 +26,7 @@ $(document).ready(function(){
                     $(".btn.btn-hi").click(function(){
                         window.location.href = 'View All Packages.html';
                     })
-                    });
-                    $(document).ready(function(){
-                        $(".btn.btn").click(function(){
-                            window.location.href = 'View All Packages.html';
-                        })
-                        });
+                    });$(document).ready(function(){
+                        $(".btn.btn-secondaryd").click(function(){
+                            window.location.href = 'Book Now.html';
+                        })})
