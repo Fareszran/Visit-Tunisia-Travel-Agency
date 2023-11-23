@@ -183,6 +183,20 @@ body { background: var(--white); }
 
 .btn-pri:is(:hover, :focus) { background: hsla(0, 0%, 100%, 0.1); }
 
+.btn-primarya {
+  background: var(--bright-navy-blue);
+  border-color: var(--bright-navy-blue);
+}
+
+.btn-primarya:is(:hover, :focus) {
+  background: var(--yale-blue);
+  border-color: var(--yale-blue);
+}
+
+.btn-primarya { border-color: var(--white); }
+
+.btn-primarya:is(:hover, :focus) { background: hsla(0, 0%, 100%, 0.1); }
+
 
 .h1,
 .h2,

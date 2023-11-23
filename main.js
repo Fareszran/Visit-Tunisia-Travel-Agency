@@ -30,4 +30,8 @@ $(document).ready(function(){
                         $(".btn.btn-pri").click(function(){
                             window.location.href = 'More Destination.html';
                         })
-                        });
+                        });$(document).ready(function(){
+                            $(".btn.btn-primarya").click(function(){
+                                window.location.href = 'Learn More.html';
+                            })
+                            });
