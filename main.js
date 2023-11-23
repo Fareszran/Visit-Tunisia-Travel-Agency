@@ -32,3 +32,4 @@ $(document).ready(function(){
                             window.location.href = 'View All Packages.html';
                         })
                         });
+                        
