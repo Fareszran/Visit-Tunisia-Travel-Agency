@@ -27,3 +27,8 @@ $(document).ready(function(){
                         window.location.href = 'View All Packages.html';
                     })
                     });
+                    $(document).ready(function(){
+                        $(".btn.btn").click(function(){
+                            window.location.href = 'View All Packages.html';
+                        })
+                        });
