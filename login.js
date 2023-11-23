@@ -48,38 +48,38 @@ function openlinkedin(){
   window.open("https://www.linkedin.com/in/khalil-cherni-778464266/")
 }
 
-$(document).ready(function(){
-  $(".fab.fa-twitter").click(function(){
+$(document).ready(()=>{
+  $(".fab.fa-twitter").click(()=>{
     window.location.href = 'https://twitter.com/';
   })
-  $(".fafab fa-facebook-f").click(function(){
+  $(".fafab fa-facebook-f").click(()=>{
     window.location.href = 'https://www.facebook.com/khalil.cherni.338/';
   })
-  $(".fab fa-google").click(function(){
+  $(".fab fa-google").click(()=>{
     window.location.href = 'https://mail.google.com/mail/u/0/?hl=fr#inbox';
   })
-  $(".fab fa-linkedin-in").click(function(){
+  $(".fab fa-linkedin-in").click(()=>{
     window.location.href = 'https://www.linkedin.com/in/khalil-cherni-778464266/';
   })
-  $(".btn").click(function(){
+  $(".btn").click(()=>{
     window.location.href = '';
   })
 
 })
-var par = document.getElementById("par")
+// var par = document.getElementById("par")
 
 
-par.addEventListener("mouseover", function() {
-    par.innerHTML = "    Tunis, the capital of Tunisia, is a city that has a lot to offer. It is a city that is rich in history, culture, and gastronomy"
-    "The Tunis Medina is a must-visit place in Tunis.";
-})
+// par.addEventListener("mouseover", function() {
+//     par.innerHTML = "    Tunis, the capital of Tunisia, is a city that has a lot to offer. It is a city that is rich in history, culture, and gastronomy"
+//     "The Tunis Medina is a must-visit place in Tunis.";
+// })
 
-par.addEventListener("mouseout", function() {
-    par.innerHTML = "Tunisia is situated on the Mediterranean coast of Northwest Africa, midway between the Atlantic Ocean and the Nile Delta. It is bordered by Algeria on the west (965 km) and southwest and Libya on the south east (459 km)."
-})
+// par.addEventListener("mouseout", function() {
+//     par.innerHTML = "Tunisia is situated on the Mediterranean coast of Northwest Africa, midway between the Atlantic Ocean and the Nile Delta. It is bordered by Algeria on the west (965 km) and southwest and Libya on the south east (459 km)."
+// })
 
-$(document).ready(function() {
-  $("#loginButton").on("click", function() {
+$(document).ready(()=> {
+  $("#loginButton").on("click", ()=> {
     login();
   });
 });
