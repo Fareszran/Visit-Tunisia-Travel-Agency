@@ -19,7 +19,7 @@ function sendMail() {
   };
 
  
-  const serviceID = "service_yuhixo3";
+  const serviceID = "service_7y7ld3g";
   const templateID = "template_tcrkuws";
 
   emailjs.send(serviceID, templateID, params)
@@ -39,6 +39,7 @@ function openTwitterkLink() {
 function openFacebookLink() {
   window.open('https://www.facebook.com/khalil.cherni.338/');
 }
+
 
 
 function openGmailLink(){
